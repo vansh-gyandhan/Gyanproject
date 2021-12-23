@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    border: 2px solid red;
+    width: 100%;
+    height: 100vh;
+}
+.box{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 40%;    
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 300px;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    display: flex;
+}
+.box .skill{
+    /* border: 1px solid blue; */
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+.box .skill .graph{
+    position: absolute;
+    width: 40px;
+    bottom: 0;
+    left: 50%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transform: translateX(-50%);
+}
+.box .skill .graph:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 0;
+}
+.box .skill .graph:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    /* background: rgba(255, 255, 255, .1); */
+}
+.box .skill .graph .percent{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+    font-weight: bold;
+}
+.box .skill .name{
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+.cl1{
+    background: #28235b;
+    box-shadow:  10px 3px 15px rgba(40, 35, 91, 0.5);
+}
+.cl2{
+    background: indianred;
+    box-shadow:  10px 3px 15px rgba(205, 92, 92, 0.5);
+}
+.cl3{
+    background: rgb(207, 152, 233);
+    box-shadow:  10px 3px 15px rgba(207, 152, 233, 0.5);
+}
+.cl4{
+    background: #8acae7;
+    box-shadow:  10px 3px 15px rgba(138, 202, 231, 0.5);
+}
+.cl5{
+    background: #8bd478;
+    box-shadow:  10px 3px 15px rgba(139, 212, 120, 0.5);
+}
